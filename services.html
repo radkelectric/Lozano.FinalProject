@@ -1,0 +1,332 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Services | Oracle Red Bull Racing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #00162b;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar.scrolled {
+      background-color: rgba(0, 22, 43, 0.4) !important;
+      backdrop-filter: blur(10px);
+      transition: background-color 0.3s ease;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .header {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), #00162b), url('assets/shop-header.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 2rem 4rem;
+    }
+
+    .header .content {
+      max-width: 600px;
+    }
+
+    .post-header-grid {
+      padding: 4rem 2rem;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .post-header-grid img {
+      width: 23%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .heritage-section {
+      background: url('assets/heritage-bg.jpg') center/cover no-repeat;
+      padding: 5rem 2rem;
+      position: relative;
+    }
+
+    .heritage-overlay {
+      padding: 2rem;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    .heritage-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .heritage-grid .item {
+      width: 23%;
+      text-align: center;
+    }
+
+    .heritage-grid .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .heritage-grid .sex {
+      font-size: 0.8rem;
+      color: gray;
+    }
+
+    .heritage-grid .name, .heritage-grid .price {
+      color: white;
+      margin: 0;
+    }
+
+    .new-arrivals {
+      background-color: white;
+      color: black;
+      padding: 5rem 2rem;
+    }
+
+    .new-arrivals h3 {
+      color: #00162b;
+      margin-bottom: 2rem;
+    }
+
+    .cap-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    .cap-carousel {
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .cap-carousel .carousel-inner img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .cap-carousel .sex {
+      font-size: 0.8rem;
+      color: gray;
+    }
+
+    .cap-carousel .name, .cap-carousel .price {
+      margin: 0;
+    }
+
+    .btn-shop {
+      background-color: #c50101;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+
+    .btn-shop:hover {
+      background-color: #a40000;
+    }
+
+    @media (max-width: 768px) {
+      .heritage-grid .item,
+      .post-header-grid img {
+        width: 48%;
+      }
+
+      .cap-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" id="mainNavbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/rbr.png" height="40" alt="RBR Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="content">
+    <h1 class="section-title">Oracle Red Bull Racing Authentics</h1>
+        <p>Driven by Design. Worn by World Champions.</p>
+  </div>
+</header>
+
+<!-- POST-HEADER GRID -->
+<section class="post-header-grid">
+  <img src="assets/h1.jpg" alt="Shirt 1">
+  <img src="assets/h2.jpg" alt="Shirt 2">
+  <img src="assets/h3.jpg" alt="Shirt 3">
+  <img src="assets/h4.jpg" alt="Shirt 4">
+</section>
+
+<!-- heritage COLLECTION -->
+<section class="heritage-section text-white">
+  <div class="heritage-overlay">
+    <h3>Heritage Collection</h3>
+    <button class="btn btn-shop">Shop Now</button>
+  </div>
+
+  <div class="heritage-grid">
+    <div class="item">
+      <img src="assets/shirt1.jpg" alt="Shirt 1">
+      <p class="sex">Unisex</p>
+      <p class="name">Heritage Replica Polo</p>
+      <p class="price">$77.95</p>
+    </div>
+    <div class="item">
+      <img src="assets/shirt2.jpg" alt="Shirt 2">
+      <p class="sex">Unisex</p>
+      <p class="name">Heritage Replica Hoodie</p>
+      <p class="price">$107.95</p>
+    </div>
+    <div class="item">
+      <img src="assets/shirt3.jpg" alt="Shirt 3">
+      <p class="sex">Unisex</p>
+      <p class="name">Heritage Replica T-shirt</p>
+      <p class="price">$59.95</p>
+    </div>
+    <div class="item">
+      <img src="assets/shirt4.jpg" alt="Shirt 4">
+      <p class="sex">Unisex</p>
+      <p class="name">Heritage Replica Long Sleeve Polo</p>
+      <p class="price">$95.95</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="new-arrivals">
+  <h3>New Arrivals</h3>
+  <div class="cap-grid">
+    <!-- Cap 1 -->
+    <div class="cap-carousel">
+      <div id="cap1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="assets/cap1.jpg" class="d-block w-100" alt="Cap 1"></div>
+          <div class="carousel-item"><img src="assets/cap2.jpg" class="d-block w-100" alt="Cap 1 alt"></div>
+        </div>
+      </div>
+      <p class="sex">Unisex</p>
+      <p class="name">Red Bull Racing Cap</p>
+      <p class="price">$39.95</p>
+    </div>
+
+    <!-- Cap 2 -->
+    <div class="cap-carousel">
+      <div id="cap2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="assets/cap3.jpg" class="d-block w-100" alt="Cap 2"></div>
+          <div class="carousel-item"><img src="assets/cap4.jpg" class="d-block w-100" alt="Cap 2 alt"></div>
+        </div>
+      </div>
+      <p class="sex">Unisex</p>
+      <p class="name">Oracle Team Cap</p>
+      <p class="price">$42.95</p>
+    </div>
+
+    <!-- Cap 3 -->
+    <div class="cap-carousel">
+      <div id="cap3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="assets/cap5.jpg" class="d-block w-100" alt="Cap 3"></div>
+          <div class="carousel-item"><img src="assets/cap6.jpg" class="d-block w-100" alt="Cap 3 alt"></div>
+        </div>
+      </div>
+      <p class="sex">Unisex</p>
+      <p class="name">2025 Launch Cap</p>
+      <p class="price">$35.00</p>
+    </div>
+
+    <!-- Cap 4 -->
+    <div class="cap-carousel">
+      <div id="cap4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="assets/cap7.jpg" class="d-block w-100" alt="Cap 4"></div>
+          <div class="carousel-item"><img src="assets/cap8.jpg" class="d-block w-100" alt="Cap 4 alt"></div>
+        </div>
+      </div>
+      <p class="sex">Unisex</p>
+      <p class="name">Team Gradient Cap</p>
+      <p class="price">$37.50</p>
+    </div>
+
+    <!-- Cap 5–8: Repeat any caps or add more -->
+    <!-- Duplicate the structure above or let me know if you want 4 new caps -->
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener('scroll', function () {
+    document.getElementById('mainNavbar').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+
+<footer class="footer-section text-center text-white mt-5">
+  <div style="background: url('assets/footer.png') center center / contain no-repeat; height: 300px;"></div>
+
+  <div class="footer-search-section py-5" style="background-color: #081d32;">
+    <h3 class="mb-3">Looking for something specific?</h3>
+    <button class="btn search-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+      </svg>
+    </button>
+    <div class="decor-lines d-flex justify-content-between align-items-center mt-4 px-4">
+      <div class="line" style="height: 3px; background-color: #c50101; width: 20%;"></div>
+      <div class="line" style="height: 3px; background-color: #c50101; width: 20%;"></div>
+    </div>
+  </div>
+
+  <div class="footer-bottom py-4" style="background-color: #00162b; font-size: 0.875rem;">
+    <p class="mb-1">© 2025 Red Bull Racing Ltd</p>
+    <p class="mb-0">
+      <a href="#" class="footer-link">Cookie Settings</a> ·
+      <a href="#" class="footer-link">Privacy Policy</a> ·
+      <a href="#" class="footer-link">Statements</a> ·
+      <a href="#" class="footer-link">Terms of use</a> ·
+      <a href="#" class="footer-link">Imprint</a> ·
+      <a href="#" class="footer-link">Contact us</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
+

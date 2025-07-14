@@ -1,0 +1,309 @@
+<html>
+<head>
+  <title>Max Verstappen | Oracle Red Bull Racing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #00162b;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar.scrolled {
+      background-color: rgba(0, 22, 43, 0.4) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .profile-header {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), #00162b), url("assets/max-header.jpg") center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 0 2rem 0.5rem;
+      position: relative;
+    }
+
+    .driver-name {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+    }
+
+    .driver-name strong {
+      display: block;
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .driver-number {
+      position: absolute;
+      bottom: 2rem;
+      right: 3rem;
+      width: 100px;
+      height: 150px;
+    }
+
+    .stats-box {
+      background: rgba(0,0,0,0.4);
+      padding: 1rem;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 380px;      
+      margin-left: 1rem;
+    }
+
+    .stats-box div {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #666;
+      padding: 10px 0;
+    }
+
+    .stats-box div:last-child {
+      border-bottom: none;
+    }
+
+    .stats-box strong {
+      font-size: 2rem;
+    }
+
+    .read-more-btn {
+      background-color: rgba(0, 123, 255, 0.2);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .read-more-btn:hover {
+      background-color: rgba(0, 123, 255, 0.4);
+    }
+
+    .vertical-carousel {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .vertical-carousel img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      z-index: 0;
+    }
+
+    .vertical-carousel img.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .vertical-carousel .nav-btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 22, 43, 0.6);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      z-index: 2;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .vertical-carousel .up-btn {
+      top: 1rem;
+    }
+
+    .vertical-carousel .down-btn {
+      bottom: 1rem;
+    }
+
+    .bio-text p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    .bio-image img {
+      width: 100%;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" id="mainNavbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/rbr.png" height="40" alt="RBR Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="profile-header text-white">
+  <div>
+    <div class="driver-name">
+      Max<br><strong>Verstappen</strong>
+    </div>
+    <div class="stats-box">
+      <div>
+        <strong>30.09.1997</strong>
+        <span>Born</span>
+      </div>
+      <div>
+        <strong>2013</strong>
+        <span>Career Start</span>
+      </div>
+      <div>
+        <strong><img src="https://flagcdn.com/w40/nl.png" alt="NL"> Netherlands</strong>
+        <span>Nationality</span>
+      </div>
+    </div>
+  </div>
+  <img class="driver-number" src="assets/max-number.png" alt="1">
+</header>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-6 bio-text">
+      <strong><h2>He’s Max by name, and max by nature.</h2></strong>
+      <p>
+        Arriving as Formula 1’s youngest ever competitor at just 17 years old,
+        Verstappen pushed his car, his rivals and the sport’s record books to the limit. 
+        The baby-faced Dutchman with the heart of a lion took the Toro Rosso – and 
+        then the Red Bull – by the horns with his instinctive racing style.
+      </p>
+      <div class="collapse" id="moreBio">
+        <p>
+          F1’s youngest points scorer soon became its youngest race winner – at the age of 
+          18 years and 228 days – with an opportunistic but controlled drive on debut for Red 
+          Bull in Barcelona 2016. A true wheel-to-wheel racer, another stunning drive in Brazil 
+          from the back of the pack to the podium on a treacherous wet track kept the plaudits coming.
+        </p>
+        <p>
+          Verstappen’s no-holds-barred attitude and hard defending have sometimes landed 
+          him in hot water with his peers and paymasters. But the mistakes that initially 
+          marred his potential have given way to maturity, while the bravado and energy that 
+          make him a blockbuster talent have remained – and the victories have kept on coming.
+        </p>
+        <p>
+          They led to his first F1 drivers’ crown after that now legendary, final-round 
+          showdown with Lewis Hamilton in 2021 and he followed that up with a powerhouse 
+          title defence in 2022. An epic third successive championship triumph featured a 
+          record 19 wins from 23 Grands Prix, and he held on for a fourth in 2024, despite Red 
+          Bull falling off the pace towards the end of the campaign.
+        </p>
+        <p>
+          The son of former F1 driver Jos Verstappen and super-quick karting Mum Sophie 
+          Kumpen, racing runs through his genes. Despite moving out of Dad’s house to live in 
+          Monaco, Verstappen remains close to his family, and though he’s not afraid to speak 
+          his mind, he can still be surprisingly shy.
+        </p>
+        <p>
+          Having become the Netherlands' first world champion aged just 24, the 
+          expectations for the new generation’s leading light are sky high – but with 
+          Verstappen there’s a feeling that the sky’s the limit.
+        </p>
+      </div>
+      <button class="btn read-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#moreBio" aria-expanded="false" aria-controls="moreBio">Read More</button>
+    </div>
+
+    <div class="col-md-6 bio-image d-none d-md-block">
+      <img src="assets/max-extra.jpeg" alt="Max Verstappen Portrait">
+    </div>
+  </div>
+</div>
+
+<div class="vertical-carousel">
+  <button class="nav-btn up-btn" onclick="showSlide(-1)">▲</button>
+  <img src="assets/rb12.jpg" class="active" alt="RB12">
+  <img src="assets/rb13.jpg" alt="RB13">
+  <img src="assets/rb14.jpg" alt="RB14">
+  <img src="assets/rb15.jpg" alt="RB15">
+  <img src="assets/rb16.jpg" alt="RB16">
+  <img src="assets/rb16b.jpg" alt="RB16B">
+  <img src="assets/rb18.jpg" alt="RB18">
+  <img src="assets/rb19.jpg" alt="RB19">
+  <img src="assets/rb20.jpg" alt="RB20">
+  <button class="nav-btn down-btn" onclick="showSlide(1)">▼</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener('scroll', function () {
+    document.getElementById('mainNavbar').classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  const slides = document.querySelectorAll('.vertical-carousel img');
+  let currentSlide = 0;
+
+  function showSlide(direction) {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+</script>
+
+<footer class="footer-section text-center text-white mt-5">
+  <div style="background: url('assets/footer.png') center center / contain no-repeat; height: 300px;"></div>
+
+  <div class="footer-search-section py-5" style="background-color: #081d32;">
+    <h3 class="mb-3">Looking for something specific?</h3>
+    <button class="btn search-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+      </svg>
+    </button>
+    <div class="decor-lines d-flex justify-content-between align-items-center mt-4 px-4">
+      <div class="line" style="height: 3px; background-color: #c50101; width: 20%;"></div>
+      <div class="line" style="height: 3px; background-color: #c50101; width: 20%;"></div>
+    </div>
+  </div>
+
+  <div class="footer-bottom py-4" style="background-color: #00162b; font-size: 0.875rem;">
+    <p class="mb-1">© 2025 Red Bull Racing Ltd</p>
+    <p class="mb-0">
+      <a href="#" class="footer-link">Cookie Settings</a> ·
+      <a href="#" class="footer-link">Privacy Policy</a> ·
+      <a href="#" class="footer-link">Statements</a> ·
+      <a href="#" class="footer-link">Terms of use</a> ·
+      <a href="#" class="footer-link">Imprint</a> ·
+      <a href="#" class="footer-link">Contact us</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
