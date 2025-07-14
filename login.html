@@ -84,25 +84,6 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" id="mainNavbar">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="assets/rbr.png" height="40" alt="RBR Logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav me-3">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 <div class="gradient-overlay"></div>
 
 <div class="container h-100 d-flex align-items-center">
@@ -112,20 +93,21 @@
     <form class="login-form mt-4" onsubmit="return validateLogin()">
       <div class="mb-3">
         <label for="username" class="form-label visually-hidden">Email</label>
-        <input type="text" id="username" class="form-control" placeholder="example@email.com" required>
+        <input type="text" id="username" class="form-control" placeholder="admin" required>
       </div>
       <div class="mb-4">
         <label for="password" class="form-label visually-hidden">Password</label>
-        <input type="password" id="password" class="form-control" placeholder="Password" required>
+        <input type="password" id="password" class="form-control" placeholder="redbull" required>
       </div>
       <button type="submit" class="btn login-btn w-100 py-2">Login</button>
     </form>
     <div class="social-icons mt-4">
       <span>Connect via</span><br>
-      <i class="bi bi-twitter-x"></i>
-      <i class="bi bi-instagram"></i>
-      <i class="bi bi-tiktok"></i>
-      <i class="bi bi-facebook"></i>
+	<a href="https://twitter.com/redbullracing" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
+	<a href="https://www.instagram.com/redbullracing/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+	<a href="https://www.tiktok.com/@redbullracing" target="_blank" rel="noopener"><i class="bi bi-tiktok"></i></a>
+	<a href="https://www.facebook.com/RedBullRacing/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+
     </div>
   </div>
 </div>
@@ -147,4 +129,3 @@
 
 </body>
 </html>
-
